@@ -6,13 +6,11 @@
 pragma solidity ^0.8.0;
 
 contract RocketGovernmentControl {
-    // États de la fusée
     uint public bombCount;
     uint public fuelAmount;
     bool public isNukeEmAllModeOn;
     uint public explodedBombs;
 
-    // Événements pour suivre les actions gouvernementales
     event BombsLoaded(uint count);
     event FuelAdded(uint amount);
     event NukeEmAllModeActivated(bool state);
